@@ -1,0 +1,26 @@
+version: "0.1.0"
+
+services:
+  model-service:
+    build: .
+    image: pytorch/base
+    container_name: py_model
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/app/src
+      - /home/ubuntu/Documentos/Proyectos/PYTHON/local_models:/app/models
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+      - CUDA_VISIBLE_DEVICES=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+              device_ids: ["0"]
+        limits:
+          cpus: "4"
+          memory: 6G
+    shm_size: "1g"
