@@ -6,5 +6,6 @@ import sys
 print(sys.version)
 import json
 print(json.dumps({"a":1,"b":2}))
-from transformers import pipeline
+""" from transformers import pipeline
 print(pipeline('sentiment-analysis')('hugging face is the best'))
+ """
