@@ -49,3 +49,12 @@ para detener el contenedor
 ```bash
 sudo docker stop py_model
 ```
+
+# MODELOS USADOS
+
+[Helsinki-NLP/opus-mt-en-es](https://huggingface.co/Helsinki-NLP/opus-mt-en-es)
+[Helsinki-NLP/opus-mt-es-en](https://huggingface.co/Helsinki-NLP/opus-mt-es-en)
+[openai/whisper-base.en](https://huggingface.co/openai/whisper-base.en)
+[Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+[suno/bark-small](https://huggingface.co/suno/bark-small)
+[bertin-project/bertin-roberta-base-spanish](https://huggingface.co/bertin-project/bertin-roberta-base-spanish)
