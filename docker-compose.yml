@@ -9,7 +9,7 @@ services:
     stdin_open: true
     volumes:
       - ./src:/app/src
-      - /home/ubuntu/Documentos/Proyectos/PYTHON/local_models:/app/models
+      - ../local_models:/app/models
     environment:
       - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
       - CUDA_VISIBLE_DEVICES=0
